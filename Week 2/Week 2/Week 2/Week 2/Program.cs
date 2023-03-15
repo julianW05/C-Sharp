@@ -153,5 +153,57 @@ namespace Week_2
 
             Console.WriteLine("name of the oldest: " + name);
         }
+
+        public static void Opd3_31()
+        {
+            String name = "";
+            int maxAge = 0;
+            bool isFirstInput = true;
+
+            while (true)
+            {
+                Console.Write("Enter name and age (or empty line to quit): ");
+                string input = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    break;
+                }
+                else
+                {
+                    string[] parts = input.Split(',');
+                    if (parts.Length == 2 && int.TryParse(parts[1], out int age))
+                    {
+                        Console.WriteLine("Name: " + parts[0] + ", Age: " + age);
+                        if (isFirstInput)
+                        {
+                            maxAge = age;
+                            isFirstInput = false;
+                        }
+                        else if (age < maxAge)
+                        {
+                            maxAge = age;
+                        }
+
+                        if (isFirstInput)
+                        {
+                            name = parts[0];
+                        }
+                        else if (parts[0].Length > name.Length)
+                        {
+                            name = parts[0];
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter name and age separated by a comma.");
+                    }
+                }
+            }
+
+            maxAge = 2023 - maxAge;
+
+            Console.WriteLine("Longest name: " + name);
+            Console.WriteLine("Highest age: " + maxAge);
+        }
     }
 }
