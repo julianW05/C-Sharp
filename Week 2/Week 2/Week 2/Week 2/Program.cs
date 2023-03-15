@@ -33,6 +33,46 @@ namespace Week_2
             // Exercise 3-30---------------------------------------------
             Opd3_30();
             // ---------------------------------------------
+            // Exercise 4-21---------------------------------------------
+            List<Book> books = new List<Book>();
+
+            while (true)
+            {
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                
+                if (name == "")
+                {
+                    break;
+                }
+
+                Console.Write("Pages: ");
+                int pages = int.Parse(Console.ReadLine());
+
+                Console.Write("Publication year: ");
+                int year = int.Parse(Console.ReadLine());
+
+                books.Add(new Book(name, pages, year));
+            }
+
+            Console.Write("What information will be printed? ");
+            string info = Console.ReadLine();
+
+            if (info == "everything")
+            {
+                foreach (Book book in books)
+                {
+                    Console.WriteLine(book.GetDetails());
+                }
+            }
+            else if (info == "title")
+            {
+                foreach (Book book in books)
+                {
+                    Console.WriteLine(book.GetTitle());
+                }
+            }
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -205,5 +245,7 @@ namespace Week_2
             Console.WriteLine("Longest name: " + name);
             Console.WriteLine("Highest age: " + maxAge);
         }
+
+        
     }
 }
