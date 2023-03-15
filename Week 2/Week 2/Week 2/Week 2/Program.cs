@@ -30,6 +30,9 @@ namespace Week_2
             // Exercise 3-29---------------------------------------------
             Opd3_29();
             // ---------------------------------------------
+            // Exercise 3-30---------------------------------------------
+            Opd3_30();
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -109,6 +112,46 @@ namespace Week_2
             Console.WriteLine("Age of the oldest: " + maxAge);
         }
 
+        public static void Opd3_30()
+        {
+            string name = "";
+            int maxAge = 0;
+            bool isFirstInput = true;
 
+            while (true)
+            {
+                Console.Write("Enter name and age (or empty line to quit): ");
+                string input = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    break;
+                }
+                else
+                {
+                    string[] parts = input.Split(',');
+                    if (parts.Length == 2 && int.TryParse(parts[1], out int age))
+                    {
+                        Console.WriteLine("Name: " + parts[0] + ", Age: " + age);
+                        if (isFirstInput)
+                        {
+                            name = parts[0];
+                            maxAge = age;
+                            isFirstInput = false;
+                        }
+                        else if (age > maxAge)
+                        {
+                            name = parts[0];
+                            maxAge = age;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter name and age separated by a comma.");
+                    }
+                }
+            }
+
+            Console.WriteLine("name of the oldest: " + name);
+        }
     }
 }
