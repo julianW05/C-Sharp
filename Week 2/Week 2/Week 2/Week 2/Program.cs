@@ -79,6 +79,9 @@ namespace Week_2
             // Exercise 4-23---------------------------------------------
             Opd4_23();
             // ---------------------------------------------
+            // Exercise 4-24---------------------------------------------
+            Opd4_24();
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -291,6 +294,23 @@ namespace Week_2
                 {
                     Console.WriteLine(num * num * num);
                 }
+            }
+        }
+
+        public static void Opd4_24()
+        {
+            string filePath = "C:\\Users\\julia\\OneDrive\\Bureaublad\\Documents\\school\\Leerjaar 2\\C#\\github repository\\C-Sharp\\Week 2\\Week 2\\Week 2\\Week 2\\Data.txt";
+            if (File.Exists(filePath))
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+            else
+            {
+                Console.WriteLine($"File {filePath} not found.");
             }
         }
     }
