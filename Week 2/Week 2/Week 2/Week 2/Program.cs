@@ -73,6 +73,9 @@ namespace Week_2
                 }
             }
             // ---------------------------------------------
+            // Exercise 4-22---------------------------------------------
+            Opd4_22();
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -246,6 +249,27 @@ namespace Week_2
             Console.WriteLine("Highest age: " + maxAge);
         }
 
-        
+        public static void Opd4_22()
+        {
+            int count = 0;
+            Console.WriteLine("Input a string: ");
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (input == "end")
+                {
+                    break;
+                }
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    
+                }
+                else
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);
+        }
     }
 }
