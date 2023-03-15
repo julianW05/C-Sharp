@@ -82,6 +82,9 @@ namespace Week_2
             // Exercise 4-24---------------------------------------------
             Opd4_24();
             // ---------------------------------------------
+            // Exercise 4-26---------------------------------------------
+            Opd4_26();
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -312,6 +315,36 @@ namespace Week_2
             {
                 Console.WriteLine($"File {filePath} not found.");
             }
+        }
+
+        public static void Opd4_26()
+        {
+            System.Collections.Generic.IEnumerable<String> lines = File.ReadLines(@"C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Week 2\Week 2\Week 2\Week 2\names.txt");
+            System.Collections.Generic.IEnumerable<String> lines2 = File.ReadLines(@"C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Week 2\Week 2\Week 2\Week 2\other-names.txt");
+            string[] combined = lines.Concat(lines2).ToArray();
+
+            Console.WriteLine("Enter names, an empty line quits.");
+
+            while (true)
+            {
+                string name = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    break;
+                }
+
+                if (Array.Exists(combined, guest => guest.Equals(name, StringComparison.OrdinalIgnoreCase)))
+                {
+                    Console.WriteLine("The name is on the list.");
+                }
+                else
+                {
+                    Console.WriteLine("The name is not on the list.");
+                }
+            }
+
+            Console.WriteLine("\nThank you!");
         }
     }
 }
