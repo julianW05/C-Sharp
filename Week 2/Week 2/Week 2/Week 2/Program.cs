@@ -76,6 +76,9 @@ namespace Week_2
             // Exercise 4-22---------------------------------------------
             Opd4_22();
             // ---------------------------------------------
+            // Exercise 4-23---------------------------------------------
+            Opd4_23();
+            // ---------------------------------------------
         }
 
         static void RemoveLast(List<string> words)
@@ -270,6 +273,25 @@ namespace Week_2
                 }
             }
             Console.WriteLine(count);
+        }
+
+        public static void Opd4_23()
+        {
+            Console.WriteLine("Give a number");
+            while (true)
+            {
+                string input = Console.ReadLine();
+
+                if (input == "end")
+                {
+                    break;
+                }
+
+                if (int.TryParse(input, out int num))
+                {
+                    Console.WriteLine(num * num * num);
+                }
+            }
         }
     }
 }
