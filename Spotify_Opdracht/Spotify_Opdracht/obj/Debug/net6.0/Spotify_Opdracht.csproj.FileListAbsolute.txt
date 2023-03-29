@@ -1,0 +1,15 @@
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\bin\Debug\net6.0\Spotify_Opdracht.exe
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\bin\Debug\net6.0\Spotify_Opdracht.deps.json
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\bin\Debug\net6.0\Spotify_Opdracht.runtimeconfig.json
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\bin\Debug\net6.0\Spotify_Opdracht.dll
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\bin\Debug\net6.0\Spotify_Opdracht.pdb
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.dll
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\refint\Spotify_Opdracht.dll
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.pdb
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\Spotify_Opdracht.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_Opdracht\Spotify_Opdracht\obj\Debug\net6.0\ref\Spotify_Opdracht.dll
