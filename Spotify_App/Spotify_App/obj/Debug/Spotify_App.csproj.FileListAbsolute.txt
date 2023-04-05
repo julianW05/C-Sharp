@@ -1,0 +1,12 @@
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\bin\Debug\Spotify_App.exe.config
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\bin\Debug\Spotify_App.exe
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\bin\Debug\Spotify_App.pdb
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.csproj.SuggestedBindingRedirects.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.Form1.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.Properties.Resources.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.csproj.GenerateResource.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.exe
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.pdb
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\Spotify_App.Vrienden.resources
