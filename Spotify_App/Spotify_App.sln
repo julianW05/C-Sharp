@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify_App", "Spotify_App\Spotify_App.csproj", "{EACA0334-7980-405E-AF86-9CF77E51A604}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify_App", "Spotify_App\Spotify_App.csproj", "{BFF4A70B-1C57-4152-9D86-D3A3D7F11FEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EACA0334-7980-405E-AF86-9CF77E51A604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EACA0334-7980-405E-AF86-9CF77E51A604}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EACA0334-7980-405E-AF86-9CF77E51A604}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EACA0334-7980-405E-AF86-9CF77E51A604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF4A70B-1C57-4152-9D86-D3A3D7F11FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF4A70B-1C57-4152-9D86-D3A3D7F11FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF4A70B-1C57-4152-9D86-D3A3D7F11FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF4A70B-1C57-4152-9D86-D3A3D7F11FEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BF34A156-B2F7-4CE8-8DD7-C8DDE6B787C0}
+		SolutionGuid = {096FBD5C-B4E0-4CAA-88FA-E69C6902390D}
 	EndGlobalSection
 EndGlobal

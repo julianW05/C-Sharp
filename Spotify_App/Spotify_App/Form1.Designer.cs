@@ -1,14 +1,14 @@
 ﻿namespace Spotify_App
 {
-    partial class Form1
+    public partial class Form1
     {
         /// <summary>
-        /// Required designer variable.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,83 +23,114 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnVrienden = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.BtnVriendenTerug = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-            this.button1.Location = new System.Drawing.Point(104, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Speellijsten";
-            this.button1.UseVisualStyleBackColor = true;
+            panel1.BackColor = SystemColors.ControlDark;
+            panel1.Controls.Add(tableLayoutPanel1);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(204, 450);
+            panel1.TabIndex = 0;
             // 
-            // BtnVrienden
+            // tableLayoutPanel1
             // 
-            this.BtnVrienden.BackColor = System.Drawing.Color.White;
-            this.BtnVrienden.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnVrienden.Location = new System.Drawing.Point(316, 147);
-            this.BtnVrienden.Name = "BtnVrienden";
-            this.BtnVrienden.Size = new System.Drawing.Size(75, 23);
-            this.BtnVrienden.TabIndex = 1;
-            this.BtnVrienden.Text = "Vrienden";
-            this.BtnVrienden.UseVisualStyleBackColor = false;
-            this.BtnVrienden.Click += new System.EventHandler(this.BtnVrienden_Click);
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(button3, 0, 2);
+            tableLayoutPanel1.Controls.Add(button2, 0, 1);
+            tableLayoutPanel1.Controls.Add(button1, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.Size = new Size(204, 238);
+            tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(217, 147);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Albums";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Dock = DockStyle.Fill;
+            button3.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Location = new Point(3, 161);
+            button3.Name = "button3";
+            button3.Size = new Size(198, 74);
+            button3.TabIndex = 2;
+            button3.Text = "Vrienden";
+            button3.UseVisualStyleBackColor = true;
             // 
-            // BtnVriendenTerug
+            // button2
             // 
-            this.BtnVriendenTerug.BackColor = System.Drawing.Color.White;
-            this.BtnVriendenTerug.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnVriendenTerug.Location = new System.Drawing.Point(217, 195);
-            this.BtnVriendenTerug.Name = "BtnVriendenTerug";
-            this.BtnVriendenTerug.Size = new System.Drawing.Size(75, 23);
-            this.BtnVriendenTerug.TabIndex = 3;
-            this.BtnVriendenTerug.Text = "Terug";
-            this.BtnVriendenTerug.UseVisualStyleBackColor = false;
-            this.BtnVriendenTerug.Visible = false;
+            button2.Dock = DockStyle.Fill;
+            button2.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(3, 82);
+            button2.Name = "button2";
+            button2.Size = new Size(198, 73);
+            button2.TabIndex = 1;
+            button2.Text = "Albums";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Fill;
+            button1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(3, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(198, 73);
+            button1.TabIndex = 0;
+            button1.Text = "Speellijsten";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(204, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(596, 450);
+            panel2.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(509, 358);
-            this.Controls.Add(this.BtnVriendenTerug);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.BtnVrienden);
-            this.Controls.Add(this.button1);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "Form1";
-            this.Text = "Spotify";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnVrienden;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button BtnVriendenTerug;
+
+        private Panel panel1;
+        private Panel panel2;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }
-
