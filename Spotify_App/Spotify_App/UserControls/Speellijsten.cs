@@ -16,9 +16,8 @@ namespace Spotify_App.UserControls
 {
     public partial class Speellijsten : UserControl
     {
-
-        private static MySqlConnection con = Database.Instance().Connection;
         bool buttonvisible = true;
+        private static MySqlConnection con = Database.Instance().Connection;
         public Speellijsten()
         {
             InitializeComponent();
@@ -57,20 +56,18 @@ namespace Spotify_App.UserControls
             if (string.IsNullOrEmpty(textBox1.Text))
                 return;
             SpeellijstenList.Items.Add(textBox1.Text);
-            textBox1.Clear();
-            textBox1.Focus();
 
             // database
 
-
             MySqlCommand cmd = con.CreateCommand();
 
-            cmd.CommandText = "INSERT INTO afspeellijsten (title) VALUES (@title)";
+            cmd.CommandText = "INSERT INTO afspeellijsten (afspeellijstName) VALUES (?title)";
 
             cmd.Parameters.AddWithValue("?title", textBox1.Text);
 
             using MySqlDataReader data = cmd.ExecuteReader();
-            
+            textBox1.Clear();
+            textBox1.Focus();
         }
 
         private void BtnDelSpeellijst_Click(object sender, EventArgs e)
@@ -81,6 +78,15 @@ namespace Spotify_App.UserControls
             }
             else if (SpeellijstenList.Items.Count >= 0)
             {
+                // database
+
+                MySqlCommand cmd = con.CreateCommand();
+
+                cmd.CommandText = "DELETE FROM afspeellijsten WHERE afspeellijstName = ?title";
+
+                cmd.Parameters.AddWithValue("?title", SpeellijstenList.SelectedItem);
+
+                using MySqlDataReader data = cmd.ExecuteReader();
                 SpeellijstenList.Items.RemoveAt(SpeellijstenList.SelectedIndex);
             }
         }
@@ -90,13 +96,37 @@ namespace Spotify_App.UserControls
             if (SpeellijstenList.SelectedIndex == -1)
             {
                 return;
-            }   else
+            }
+            else
             {
-                Speellijst speellijstUserControl = new Speellijst();
+                Speellijst speellijstUserControl = new Speellijst(SpeellijstenList.SelectedItem.ToString());
                 speellijstUserControl.Dock = DockStyle.Fill;
                 this.Controls.Clear();
                 this.Controls.Add(speellijstUserControl);
             }
+        }
+
+        private void Speellijsten_Load(object sender, EventArgs e)
+        {
+            // get afspeellijsten uit database
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            cmd.CommandText = "SELECT afspeellijstName FROM afspeellijsten";
+
+            using MySqlDataReader data = cmd.ExecuteReader();
+
+            while (data.Read())
+            {
+                string[] afspeellijsten = new string[data.FieldCount];
+                for (int i = 0; i < data.FieldCount; i++)
+                {
+                    afspeellijsten[i] = data.GetValue(i).ToString();
+                    SpeellijstenList.Items.Add(afspeellijsten[i]);
+                }
+
+            }
+       
         }
     }
 }

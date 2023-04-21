@@ -115,9 +115,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Spotify";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);

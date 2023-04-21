@@ -111,6 +111,7 @@
             Controls.Add(BtnBack);
             Name = "Speellijsten";
             Size = new Size(596, 450);
+            Load += Speellijsten_Load;
             ResumeLayout(false);
             PerformLayout();
         }
