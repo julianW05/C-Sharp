@@ -1,6 +1,6 @@
 ﻿namespace Spotify_App.UserControls
 {
-    partial class Albums
+    partial class Vriend
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,48 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AlbumsList = new ListBox();
+            label1 = new Label();
             BtnBack = new Button();
+            label2 = new Label();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
-            // AlbumsList
+            // label1
             // 
-            AlbumsList.FormattingEnabled = true;
-            AlbumsList.ItemHeight = 15;
-            AlbumsList.Location = new Point(3, 2);
-            AlbumsList.Margin = new Padding(3, 2, 3, 2);
-            AlbumsList.Name = "AlbumsList";
-            AlbumsList.Size = new Size(132, 124);
-            AlbumsList.TabIndex = 2;
-            AlbumsList.DoubleClick += AlbumsList_DoubleClick;
+            label1.AutoSize = true;
+            label1.Location = new Point(10, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 3;
+            label1.Text = "label1";
             // 
             // BtnBack
             // 
             BtnBack.Location = new Point(437, 2);
             BtnBack.Margin = new Padding(3, 2, 3, 2);
             BtnBack.Name = "BtnBack";
-            BtnBack.Size = new Size(82, 26);
-            BtnBack.TabIndex = 3;
+            BtnBack.Size = new Size(82, 27);
+            BtnBack.TabIndex = 4;
             BtnBack.Text = "Terug";
             BtnBack.UseVisualStyleBackColor = true;
             BtnBack.Click += BtnBack_Click;
             // 
-            // Albums
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(178, 10);
+            label2.Name = "label2";
+            label2.Size = new Size(66, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Speellijsten";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(178, 37);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(120, 94);
+            listBox1.TabIndex = 6;
+            listBox1.DoubleClick += listBox1_DoubleClick;
+            // 
+            // Vriend
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(listBox1);
+            Controls.Add(label2);
             Controls.Add(BtnBack);
-            Controls.Add(AlbumsList);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Albums";
+            Controls.Add(label1);
+            Name = "Vriend";
             Size = new Size(522, 338);
-            Load += Albums_Load;
+            Load += Vriend_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ListBox AlbumsList;
+        private Label label1;
         private Button BtnBack;
+        private Label label2;
+        private ListBox listBox1;
     }
 }

@@ -11,48 +11,48 @@ using System.Windows.Forms;
 
 namespace Spotify_App.UserControls
 {
-    public partial class Albums : UserControl
+    public partial class Vrienden : UserControl
     {
         private static MySqlConnection con = Database.Instance().Connection;
-        public Albums()
+        public Vrienden()
         {
             InitializeComponent();
         }
 
-        private void Albums_Load(object sender, EventArgs e)
+        private void Vrienden_Load(object sender, EventArgs e)
         {
-            // get albums uit database
+            // get afspeellijsten uit database
 
             MySqlCommand cmd = con.CreateCommand();
 
-            cmd.CommandText = "SELECT albumName FROM albums";
+            cmd.CommandText = "SELECT vriendName FROM vrienden";
 
             using MySqlDataReader data = cmd.ExecuteReader();
 
             while (data.Read())
             {
-                string[] albums = new string[data.FieldCount];
+                string[] vrienden = new string[data.FieldCount];
                 for (int i = 0; i < data.FieldCount; i++)
                 {
-                    albums[i] = data.GetValue(i).ToString();
-                    AlbumsList.Items.Add(albums[i]);
+                    vrienden[i] = data.GetValue(i).ToString();
+                    VriendenList.Items.Add(vrienden[i]);
                 }
 
             }
         }
 
-        private void AlbumsList_DoubleClick(object sender, EventArgs e)
+        private void VriendenList_DoubleClick(object sender, EventArgs e)
         {
-            if (AlbumsList.SelectedIndex == -1)
+            if (VriendenList.SelectedIndex == -1)
             {
                 return;
             }
             else
             {
-                Album albumUserControl = new Album(AlbumsList.SelectedItem.ToString());
-                albumUserControl.Dock = DockStyle.Fill;
+                Vriend vriendUserControl = new Vriend(VriendenList.SelectedItem.ToString());
+                vriendUserControl.Dock = DockStyle.Fill;
                 this.Controls.Clear();
-                this.Controls.Add(albumUserControl);
+                this.Controls.Add(vriendUserControl);
             }
         }
 

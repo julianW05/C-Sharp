@@ -35,5 +35,13 @@ namespace Spotify_App
             this.panel2.Controls.Clear();
             this.panel2.Controls.Add(albumsUserControl);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Vrienden vriendenUserControl = new Vrienden();
+            vriendenUserControl.Dock = DockStyle.Fill;
+            this.panel2.Controls.Clear();
+            this.panel2.Controls.Add(vriendenUserControl);
+        }
     }
 }

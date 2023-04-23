@@ -38,9 +38,10 @@
             // 
             // BtnBack
             // 
-            BtnBack.Location = new Point(499, 3);
+            BtnBack.Location = new Point(437, 2);
+            BtnBack.Margin = new Padding(3, 2, 3, 2);
             BtnBack.Name = "BtnBack";
-            BtnBack.Size = new Size(94, 29);
+            BtnBack.Size = new Size(82, 27);
             BtnBack.TabIndex = 0;
             BtnBack.Text = "Terug";
             BtnBack.UseVisualStyleBackColor = true;
@@ -49,10 +50,11 @@
             // SpeellijstenList
             // 
             SpeellijstenList.FormattingEnabled = true;
-            SpeellijstenList.ItemHeight = 20;
-            SpeellijstenList.Location = new Point(3, 3);
+            SpeellijstenList.ItemHeight = 15;
+            SpeellijstenList.Location = new Point(3, 2);
+            SpeellijstenList.Margin = new Padding(3, 2, 3, 2);
             SpeellijstenList.Name = "SpeellijstenList";
-            SpeellijstenList.Size = new Size(150, 104);
+            SpeellijstenList.Size = new Size(132, 124);
             SpeellijstenList.TabIndex = 1;
             SpeellijstenList.SelectedIndexChanged += SpeellijstenList_SelectedIndexChanged;
             SpeellijstenList.DoubleClick += SpeellijstenList_DoubleClick;
@@ -60,9 +62,10 @@
             // SpeellijstAdd
             // 
             SpeellijstAdd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            SpeellijstAdd.Location = new Point(159, 3);
+            SpeellijstAdd.Location = new Point(139, 2);
+            SpeellijstAdd.Margin = new Padding(3, 2, 3, 2);
             SpeellijstAdd.Name = "SpeellijstAdd";
-            SpeellijstAdd.Size = new Size(121, 65);
+            SpeellijstAdd.Size = new Size(106, 58);
             SpeellijstAdd.TabIndex = 2;
             SpeellijstAdd.Text = "Speellijst aanmaken";
             SpeellijstAdd.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // SpeellijstConfirm
             // 
             SpeellijstConfirm.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            SpeellijstConfirm.Location = new Point(159, 107);
+            SpeellijstConfirm.Location = new Point(139, 90);
+            SpeellijstConfirm.Margin = new Padding(3, 2, 3, 2);
             SpeellijstConfirm.Name = "SpeellijstConfirm";
-            SpeellijstConfirm.Size = new Size(121, 65);
+            SpeellijstConfirm.Size = new Size(106, 49);
             SpeellijstConfirm.TabIndex = 3;
             SpeellijstConfirm.Text = "Toevoegen";
             SpeellijstConfirm.UseVisualStyleBackColor = true;
@@ -82,18 +86,20 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(159, 74);
+            textBox1.Location = new Point(139, 64);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(110, 23);
             textBox1.TabIndex = 4;
             textBox1.Visible = false;
             // 
             // BtnDelSpeellijst
             // 
             BtnDelSpeellijst.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            BtnDelSpeellijst.Location = new Point(286, 3);
+            BtnDelSpeellijst.Location = new Point(250, 2);
+            BtnDelSpeellijst.Margin = new Padding(3, 2, 3, 2);
             BtnDelSpeellijst.Name = "BtnDelSpeellijst";
-            BtnDelSpeellijst.Size = new Size(129, 65);
+            BtnDelSpeellijst.Size = new Size(113, 58);
             BtnDelSpeellijst.TabIndex = 5;
             BtnDelSpeellijst.Text = "Speellijst Verwijderen";
             BtnDelSpeellijst.UseVisualStyleBackColor = true;
@@ -101,7 +107,7 @@
             // 
             // Speellijsten
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(BtnDelSpeellijst);
             Controls.Add(textBox1);
@@ -109,8 +115,9 @@
             Controls.Add(SpeellijstAdd);
             Controls.Add(SpeellijstenList);
             Controls.Add(BtnBack);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Speellijsten";
-            Size = new Size(596, 450);
+            Size = new Size(522, 338);
             Load += Speellijsten_Load;
             ResumeLayout(false);
             PerformLayout();

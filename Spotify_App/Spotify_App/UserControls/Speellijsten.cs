@@ -126,7 +126,7 @@ namespace Spotify_App.UserControls
                 }
 
             }
-       
+
         }
     }
 }

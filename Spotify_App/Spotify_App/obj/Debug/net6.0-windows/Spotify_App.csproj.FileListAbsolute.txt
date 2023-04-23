@@ -31,3 +31,7 @@ C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github reposit
 C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.csproj.CopyComplete
 C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.Properties.Resources.resources
 C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.UserControls.nowPlaying.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.UserControls.Albums.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.UserControls.Album.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.UserControls.Vrienden.resources
+C:\Users\julia\OneDrive\Bureaublad\Documents\school\Leerjaar 2\C#\github repository\C-Sharp\Spotify_App\Spotify_App\obj\Debug\net6.0-windows\Spotify_App.UserControls.Vriend.resources

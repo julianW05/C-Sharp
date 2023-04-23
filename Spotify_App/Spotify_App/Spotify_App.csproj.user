@@ -4,6 +4,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControls\Album.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\Albums.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -14,6 +17,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\Speellijsten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\Vriend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\Vrienden.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

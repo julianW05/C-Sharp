@@ -41,9 +41,10 @@
             // 
             // BtnBack
             // 
-            BtnBack.Location = new Point(499, 3);
+            BtnBack.Location = new Point(437, 2);
+            BtnBack.Margin = new Padding(3, 2, 3, 2);
             BtnBack.Name = "BtnBack";
-            BtnBack.Size = new Size(94, 29);
+            BtnBack.Size = new Size(82, 27);
             BtnBack.TabIndex = 1;
             BtnBack.Text = "Terug";
             BtnBack.UseVisualStyleBackColor = true;
@@ -52,17 +53,18 @@
             // afspeellijstTitle
             // 
             afspeellijstTitle.AutoSize = true;
-            afspeellijstTitle.Location = new Point(8, 9);
+            afspeellijstTitle.Location = new Point(7, 7);
             afspeellijstTitle.Name = "afspeellijstTitle";
-            afspeellijstTitle.Size = new Size(50, 20);
+            afspeellijstTitle.Size = new Size(38, 15);
             afspeellijstTitle.TabIndex = 2;
             afspeellijstTitle.Text = "label1";
             // 
             // BtnAddSong
             // 
-            BtnAddSong.Location = new Point(104, 9);
+            BtnAddSong.Location = new Point(91, 7);
+            BtnAddSong.Margin = new Padding(3, 2, 3, 2);
             BtnAddSong.Name = "BtnAddSong";
-            BtnAddSong.Size = new Size(112, 50);
+            BtnAddSong.Size = new Size(98, 38);
             BtnAddSong.TabIndex = 3;
             BtnAddSong.Text = "Nummer toevoegen";
             BtnAddSong.UseVisualStyleBackColor = true;
@@ -71,10 +73,11 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(104, 71);
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(91, 53);
+            listBox1.Margin = new Padding(3, 2, 3, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(112, 144);
+            listBox1.Size = new Size(98, 109);
             listBox1.TabIndex = 4;
             listBox1.Visible = false;
             listBox1.DoubleClick += listBox1_DoubleClick;
@@ -82,27 +85,29 @@
             // nummersLabel
             // 
             nummersLabel.AutoSize = true;
-            nummersLabel.Location = new Point(352, 24);
+            nummersLabel.Location = new Point(308, 18);
             nummersLabel.Name = "nummersLabel";
-            nummersLabel.Size = new Size(73, 20);
+            nummersLabel.Size = new Size(60, 15);
             nummersLabel.TabIndex = 5;
             nummersLabel.Text = "Nummers";
             // 
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 20;
-            listBox2.Location = new Point(352, 71);
+            listBox2.ItemHeight = 15;
+            listBox2.Location = new Point(308, 53);
+            listBox2.Margin = new Padding(3, 2, 3, 2);
             listBox2.Name = "listBox2";
-            listBox2.Size = new Size(150, 104);
+            listBox2.Size = new Size(132, 79);
             listBox2.TabIndex = 6;
             listBox2.DoubleClick += listBox2_DoubleClick;
             // 
             // BtnRemSong
             // 
-            BtnRemSong.Location = new Point(226, 9);
+            BtnRemSong.Location = new Point(198, 7);
+            BtnRemSong.Margin = new Padding(3, 2, 3, 2);
             BtnRemSong.Name = "BtnRemSong";
-            BtnRemSong.Size = new Size(112, 50);
+            BtnRemSong.Size = new Size(98, 38);
             BtnRemSong.TabIndex = 7;
             BtnRemSong.Text = "Nummer verwijderen";
             BtnRemSong.UseVisualStyleBackColor = true;
@@ -111,24 +116,26 @@
             // listBox3
             // 
             listBox3.FormattingEnabled = true;
-            listBox3.ItemHeight = 20;
-            listBox3.Location = new Point(226, 71);
+            listBox3.ItemHeight = 15;
+            listBox3.Location = new Point(198, 53);
+            listBox3.Margin = new Padding(3, 2, 3, 2);
             listBox3.Name = "listBox3";
-            listBox3.Size = new Size(112, 144);
+            listBox3.Size = new Size(98, 109);
             listBox3.TabIndex = 8;
             listBox3.Visible = false;
             listBox3.DoubleClick += listBox3_DoubleClick;
             // 
             // panel1
             // 
-            panel1.Location = new Point(0, 331);
+            panel1.Location = new Point(0, 248);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(596, 119);
+            panel1.Size = new Size(522, 89);
             panel1.TabIndex = 9;
             // 
             // Speellijst
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(listBox3);
@@ -139,8 +146,9 @@
             Controls.Add(BtnAddSong);
             Controls.Add(afspeellijstTitle);
             Controls.Add(BtnBack);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Speellijst";
-            Size = new Size(596, 450);
+            Size = new Size(522, 338);
             Load += Speellijst_Load;
             ResumeLayout(false);
             PerformLayout();
