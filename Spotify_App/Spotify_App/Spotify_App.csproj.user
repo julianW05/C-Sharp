@@ -4,6 +4,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControls\Albums.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\nowPlaying.cs">
       <SubType>UserControl</SubType>
     </Compile>

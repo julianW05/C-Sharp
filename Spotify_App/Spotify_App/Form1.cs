@@ -27,5 +27,13 @@ namespace Spotify_App
             this.panel2.Controls.Clear();
             this.panel2.Controls.Add(speellijstenUserControl);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Albums albumsUserControl = new Albums();
+            albumsUserControl.Dock = DockStyle.Fill;
+            this.panel2.Controls.Clear();
+            this.panel2.Controls.Add(albumsUserControl);
+        }
     }
 }
